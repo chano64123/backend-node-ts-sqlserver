@@ -35,7 +35,7 @@ export class CategoriaController {
       }      
     } catch (error: any) {
       codigo = error.statusCode || 500
-      respuesta = Respuesta.getError(errores.ERROR_SERVIDOR, error.message)
+      respuesta = Respuesta.getError(error.message, errores.ERROR_SERVIDOR)
     } finally {
       return res.status(codigo).json(respuesta)
     }
@@ -58,11 +58,11 @@ export class CategoriaController {
 
           // armando respuesta de la consulta
           codigo = 200
-          respuesta = Respuesta.getSuccess(categorias, mensajes.CATEGORIA_ID)
+          respuesta = Respuesta.getSuccess(categorias[0], mensajes.CATEGORIA_ID)
         } else {
           // armando respuesta de la consulta
           codigo = 404
-          respuesta = Respuesta.getSuccessNoResult(mensajes.CATEGORIA_NO_ENCONTRADO)
+          respuesta = Respuesta.getSuccessNoResult(mensajes.CATEGORIA_NO_ENCONTRADA)
         }
 
       } else {

@@ -17,7 +17,7 @@ export enum mensajes {
   CATEGORIA_ACTUALIZADA = 'Categoria actualizada',
   CATEGORIA_ELIMINADA = 'Categoria eliminada',
   CATEGORIA_NOMBRE_NO_ENCONTRADO = 'Categorias no encontradas por nombre',
-  CATEGORIA_NO_ENCONTRADO = 'Categoria no encontrada',
+  CATEGORIA_NO_ENCONTRADA = 'Categoria no encontrada',
   CATEGORIA_NO_RESULTADO = 'No hay categorias registradas',
 
   // PRODUCTOS
@@ -28,4 +28,6 @@ export enum mensajes {
   PRODUCTO_ACTUALIZADO = 'Producto actualizado',
   PRODUCTO_ELIMINADO = 'Producto eliminado',
   PRODUCTO_ID = 'Producto por id',
+  PRODUCTO_NO_ENCONTRADO = 'Producto no encontrado',
+  PRODUCTO_NO_RESULTADO = 'No hay productos registrados',
 }

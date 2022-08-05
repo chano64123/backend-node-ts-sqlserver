@@ -1,7 +1,7 @@
 import express from 'express'
 import config from './config'
 import cors  from 'cors'
-//import productoRoutes from './routes/producto.routes'
+import productoRoutes from './routes/producto.routes'
 import categoriaRoutes from './routes/categoria.routes'
 
 
@@ -26,7 +26,7 @@ app.get('/', (_req, res) => {
 })
 
 //rutas
-//app.use(productoRoutes)
+app.use(productoRoutes)
 app.use(categoriaRoutes)
 
 // 404
